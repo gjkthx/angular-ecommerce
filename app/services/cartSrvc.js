@@ -30,5 +30,10 @@ angular.module('ecommerce').service('cartSrvc', function(){
       return total + lineItem.amount
     }, 0)
   }
+  this.removeItem = function(product){
+    let index = cart.findIndex(line=>line.product === product);
+    
+    cart.splice(index, 1);
+  }
 
 })

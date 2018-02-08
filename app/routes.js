@@ -9,7 +9,8 @@ angular.module('ecommerce').config(function($stateProvider, $urlRouterProvider){
     controller:'productListCtrl'
   }).state('cart', {
     url:'/cart',
-    templateUrl:'app/views/cart/cart.html'
+    // templateUrl:'app/views/cart/cart.html'
+    component: 'cart'
   }).state('components', {
     url:'/components',
     templateUrl:'app/views/components/components.html',
